@@ -7,10 +7,15 @@
 
 // Funciones anonimas
 
-const saludar = function(nombre) {
-    console.log ("Hola " + nombre);
-}
-saludar("Juan carlos");
+// const saludar = function(nombre) {
+//     console.log ("Hola " + nombre);
+// }
+// saludar("Juan carlos");
 
 
 // Funciones flecha
+
+const saludar = (nombre) => {
+    console.log ("Hola " + nombre);
+}
+saludar("Jc");
