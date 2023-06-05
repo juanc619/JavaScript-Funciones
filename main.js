@@ -83,16 +83,34 @@
 
 // Clases
 
-class Producto {
-    constructor(titulo, precio, color) {
-        this.titulo = titulo;
-        this.precio = precio;
-        this.color = color;
+// class Producto {
+//     constructor(titulo, precio, color) {
+//         this.titulo = titulo;
+//         this.precio = precio;
+//         this.color = color;
+//     }
+// }
+
+// const producto1 = new Producto("sillon", 40, "azul");
+// console.log(producto1);
+
+
+// Metodos
+
+class Persona {
+    constructor(nombre, edad, nacionalidad) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.nacionalidad = nacionalidad;
+        this.saludar = function(){ console.log("Hola soy " + this.nombre) }
+        this.cumpleanios = function() { this.edad = this.edad + 1};
     }
 }
 
-const producto1 = new Producto("sillon", 40, "azul");
-console.log(producto1);
+const persona1 = new Persona("Jc", 37, "Peruana");
+const persona2 = new Persona("carlos", 33, "Peruana");
 
-
+persona1.saludar();
+persona1.cumpleanios();
+console.log(persona1.edad);
 
