@@ -68,13 +68,31 @@
 
 // Contructor
 
-function Producto(titulo, color, precio) {
-    this.titulo = titulo;
-    this.color = color;
-    this.precio = precio;
+// function Producto(titulo, color, precio) {
+//     this.titulo = titulo;
+//     this.color = color;
+//     this.precio = precio;
+// }
+
+// const product1 = new Producto("silla", "rojo", 50);
+// const product2 = new Producto("cama", "blanca" , 1500);
+
+// console.log(product2);
+
+/******************************* */
+
+// Clases
+
+class Producto {
+    constructor(titulo, precio, color) {
+        this.titulo = titulo;
+        this.precio = precio;
+        this.color = color;
+    }
 }
 
-const product1 = new Producto("silla", "rojo", 50);
-const product2 = new Producto("cama", "blanca" , 1500);
+const producto1 = new Producto("sillon", 40, "azul");
+console.log(producto1);
 
-console.log(product2);
+
+
