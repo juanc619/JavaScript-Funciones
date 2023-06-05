@@ -95,7 +95,26 @@
 // console.log(producto1);
 
 
-// Metodos
+// // Metodos
+
+// class Persona {
+//     constructor(nombre, edad, nacionalidad) {
+//         this.nombre = nombre;
+//         this.edad = edad;
+//         this.nacionalidad = nacionalidad;
+//         this.saludar = function(){ console.log("Hola soy " + this.nombre) }
+//         this.cumpleanios = function() { this.edad = this.edad + 1};
+//     }
+// }
+
+// const persona1 = new Persona("Jc", 37, "Peruana");
+// const persona2 = new Persona("carlos", 33, "Peruana");
+
+// persona1.saludar();
+// persona1.cumpleanios();
+// console.log(persona1.edad);
+
+
 
 class Persona {
     constructor(nombre, edad, nacionalidad) {
@@ -108,9 +127,19 @@ class Persona {
 }
 
 const persona1 = new Persona("Jc", 37, "Peruana");
-const persona2 = new Persona("carlos", 33, "Peruana");
 
-persona1.saludar();
-persona1.cumpleanios();
-console.log(persona1.edad);
+
+// persona1.saludar();
+// persona1.cumpleanios();
+// console.log(persona1.edad);
+
+// console.log("nombre" in persona1);
+
+// Operador In
+
+if ("hobbies" in persona1) {
+    console.log(persona1.hobbies);
+} else {
+    console.log("No hay hobbies");
+}
 
