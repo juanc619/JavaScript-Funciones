@@ -137,9 +137,36 @@ const persona1 = new Persona("Jc", 37, "Peruana");
 
 // Operador In
 
-if ("hobbies" in persona1) {
-    console.log(persona1.hobbies);
-} else {
-    console.log("No hay hobbies");
+// if ("hobbies" in persona1) {
+//     console.log(persona1.hobbies);
+// } else {
+//     console.log("No hay hobbies");
+// }
+
+// Operador FOR....IN
+
+for (const propiedad in persona1) {
+    console.log(propiedad);
 }
+
+
+// Propiedades y metodos con variables y funciones externas
+const IVA = 1.21;
+
+function saludar() {
+    console.log("Hola soy " + this.nombre);
+}
+
+const product1 = {
+    nombre : "sillon",
+    color : "rojo",
+    precio : 90,
+    iva : IVA,
+    saludar,
+    tamaño : 25
+}
+
+product1.saludar();
+console.log(product1);
+
 
